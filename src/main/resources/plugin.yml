@@ -1,0 +1,7 @@
+name: Announcements
+version: ${project.version}
+main: net.dottsg.announcements.Announcements
+api-version: 1.14
+authors: [Jamac]
+description: Server-wide announcement plugin
+website: dottsg.net
