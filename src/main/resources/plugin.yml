@@ -5,3 +5,43 @@ api-version: 1.14
 authors: [Jamac]
 description: Server-wide announcement plugin
 website: dottsg.net
+commands:
+  addrandom:
+    description: Adds a new announcement to the random pool
+    permission: edit
+    usage: /announcementaddrandom <name> <message>
+    aliases: [announcementaddrandom, anaddrandom]
+  addfixed:
+    description: Adds a new announcement that repeats at a given interval
+    permission: edit
+    usage: /addfixed <name> <tickInterval> <message>
+    aliases: [announcementaddfixed, anaddfixed]
+  addonlogin:
+    description: Adds a new announcement that displays on login
+    permission: edit
+    usage: /addonlogin <name> <onFirstLogin> <message>
+    aliases: [announcementaddonlogin, anaddonlogin]
+  remove:
+    description: Removes an announcement
+    permission: edit
+    usage: /remove <name>
+    aliases: [announcementremove, anremove]
+  changemessage:
+    description: Changes an announcement's message
+    permission: edit
+    usage: /changemessage <name> <message>
+    aliases: [announcementchangemessage, anchangemessage]
+  list:
+    description: Lists all announcements
+    permission: edit
+    usage: /list <page>
+    aliases: [announcementlist, anlist]
+  setrandominterval:
+    description: Sets the interval of random announcements
+    permission: edit
+    usage: /setrandominterval <tickInterval>
+    aliases: [announcementsetrandominterval, ansetrandominterval]
+permissions:
+  edit:
+    description: enables managing announcements
+    default: op
