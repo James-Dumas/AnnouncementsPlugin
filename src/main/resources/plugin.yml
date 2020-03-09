@@ -1,46 +1,46 @@
 name: Announcements
 version: ${project.version}
 main: net.dottsg.announcements.Announcements
-api-version: 1.14
+api-version: 1.15
 authors: [Jamac]
 description: Server-wide announcement plugin
 website: dottsg.net
 commands:
-  addrandom:
+  anaddrandom:
     description: Adds a new announcement to the random pool
     permission: edit
     usage: /announcementaddrandom <name> <message>
-    aliases: [announcementaddrandom, anaddrandom]
-  addfixed:
+    aliases: [announcementaddrandom]
+  anaddfixed:
     description: Adds a new announcement that repeats at a given interval
     permission: edit
     usage: /addfixed <name> <tickInterval> <message>
-    aliases: [announcementaddfixed, anaddfixed]
-  addonlogin:
+    aliases: [announcementaddfixed]
+  anaddonlogin:
     description: Adds a new announcement that displays on login
     permission: edit
     usage: /addonlogin <name> <onFirstLogin> <message>
-    aliases: [announcementaddonlogin, anaddonlogin]
-  remove:
+    aliases: [announcementaddonlogin]
+  anremove:
     description: Removes an announcement
     permission: edit
     usage: /remove <name>
-    aliases: [announcementremove, anremove]
-  changemessage:
+    aliases: [announcementremove]
+  anchangemessage:
     description: Changes an announcement's message
     permission: edit
     usage: /changemessage <name> <message>
-    aliases: [announcementchangemessage, anchangemessage]
-  list:
+    aliases: [announcementchangemessage]
+  anlist:
     description: Lists all announcements
     permission: edit
     usage: /list <page>
-    aliases: [announcementlist, anlist]
-  setrandominterval:
+    aliases: [announcementlist]
+  ansetrandominterval:
     description: Sets the interval of random announcements
     permission: edit
     usage: /setrandominterval <tickInterval>
-    aliases: [announcementsetrandominterval, ansetrandominterval]
+    aliases: [announcementsetrandominterval]
 permissions:
   edit:
     description: enables managing announcements

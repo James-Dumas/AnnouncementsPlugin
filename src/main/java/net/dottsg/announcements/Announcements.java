@@ -42,13 +42,13 @@ public final class Announcements extends JavaPlugin
         getServer().getPluginManager().registerEvents(new EventListener(), this);
 
         log("Registering commands");
-        this.getCommand("addrandom").setExecutor(new CommandAddRandom());
-        this.getCommand("addfixed").setExecutor(new CommandAddFixed());
-        this.getCommand("addonlogin").setExecutor(new CommandAddOnLogin());
-        this.getCommand("remove").setExecutor(new CommandRemove());
-        this.getCommand("changemessage").setExecutor(new CommandChangeMessage());
-        this.getCommand("list").setExecutor(new CommandList());
-        this.getCommand("setrandominterval").setExecutor(new CommandSetRandomInterval());
+        this.getCommand("anaddrandom").setExecutor(new CommandAddRandom());
+        this.getCommand("anaddfixed").setExecutor(new CommandAddFixed());
+        this.getCommand("anaddonlogin").setExecutor(new CommandAddOnLogin());
+        this.getCommand("anremove").setExecutor(new CommandRemove());
+        this.getCommand("anchangemessage").setExecutor(new CommandChangeMessage());
+        this.getCommand("anlist").setExecutor(new CommandList());
+        this.getCommand("ansetrandominterval").setExecutor(new CommandSetRandomInterval());
 
         // schedule database refreshing
         timer.scheduleAtFixedRate(new TimerTask()
